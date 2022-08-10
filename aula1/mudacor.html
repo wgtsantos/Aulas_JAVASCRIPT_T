@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title> Aula 1 - Mudar cor de Fundo </title>
+        <meta charset="utf-8"/>
+
+    <style>
+        div {
+            width: 180px;
+            height: 120px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            box-shadow: 4px 4px 3px rgba(10, 10, 10, 0.5);
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        function mudacor(){
+            var bg1 = document.getElementById("cor1").value;
+            var bg2 = document.getElementById("cor2").value;
+            var bg3 = document.getElementById("cor3").value;
+
+            document.getElementById("q1").style.backgroundColor = bg1;
+            document.getElementById("q2").style.backgroundColor = bg2;
+            document.getElementById("q3").style.backgroundColor = bg3;
+        }
+
+    </script>
+
+    </head>
+
+    <body>
+
+            <label> Informe a cor: </label>
+            <input type="color" id="cor1" name="cor1"/>
+            <div id="q1"></div>
+            <br/> <br/>
+
+            <label> Informe a cor: </label>
+            <input type="color" id="cor2" name="cor2"/>
+            <div id="q2"></div>
+            <br/> <br/>
+
+            <label> Informe a cor: </label>
+            <input type="color" id="cor3" name="cor3"/>
+            <div id="q3"></div>
+            <br/> <br/>
+            <input type="submit" id="enviar" name="enviar" value="APLICAR" 
+            onclick="mudacor()"/>
+
+    </body>
+
+</html>

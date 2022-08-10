@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title> Aula 1 - Document </title>
+        <meta charset="utf-8"/>
+
+    <script type="text/javascript">
+
+        const time = setTimeout(abrir, 5000);
+
+        function abrir() {
+
+        for (let i = 0; i < 30; i++) {
+        
+            document.getElementById("load").innerHTML = "<h2> VIRUS </h2>";
+            document.body.style.backgroundColor = "#00"+i;
+        }
+
+        }
+
+    </script>
+
+    </head>
+
+    <body>
+
+        <div id="load"></div>
+
+    </body>
+
+</html>
